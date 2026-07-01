@@ -1,2 +1,5 @@
-# dot.net.faces.3d.view
-dot.net.faces.3d.view faces .csv files
+openjdk-asmtools-jasm Hello.jasm -w .
+
+sudo dnf install openjdk-asmtools.noarch
+
+/usr/bin/openjdk-asmtools-jdis -w . Hello.class
