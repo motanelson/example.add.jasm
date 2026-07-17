@@ -1,6 +1,8 @@
 import os
 import copy
 import zlib
+from tkinter import filedialog
+
 def save_compile(f1, data):
     comp = zlib.compress(data, level=9)
     
@@ -12,7 +14,8 @@ def load_compile(filename):
     return zlib.decompress(comp)
 
 print("\033c\033[47;30m\ngive me the .txt .video file ? \n")
-a=input().strip()
+a=filedialog.askopenfile(title="give me the .txt .video file ? ",defaultextension="*.video")
+a=a.name
 f1=open(a,"r")
 f=f1.read()
 f1.close()
